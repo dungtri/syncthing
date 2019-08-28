@@ -1,5 +1,7 @@
 [![Syncthing][14]][15]
 
+[![Build Status](https://drone.dungtri.be/api/badges/dungtri/syncthing/status.svg)](https://drone.dungtri.be/dungtri/syncthing)
+
 ---
 
 [![Latest Linux & Cross Build](https://img.shields.io/teamcity/https/build.syncthing.net/s/Syncthing_BuildLinuxCross.svg?style=flat-square&label=linux+%26+cross+build)](https://build.syncthing.net/viewType.html?buildTypeId=Syncthing_BuildLinuxCross&guest=1)
