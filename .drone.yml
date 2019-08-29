@@ -115,16 +115,7 @@ steps:
 kind: pipeline
 name: manifest
 
-clone:
-  disable: true
-
 steps:
-- name: clone
-  image: docker:git
-  commands:
-  - git clone https://github.com/dungtri/syncthing.git .
-  - git checkout v1.2.1
-
 - name: manifest
   image: plugins/manifest
   settings:
