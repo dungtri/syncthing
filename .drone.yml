@@ -12,7 +12,7 @@ steps:
 - name: clone
   image: docker:git
   commands:
-  - git clone $DRONE_GIT_HTTP_URL
+  - git clone https://github.com/dungtri/syncthing.git
   - git checkout v1.2.1
 
 - name: build
@@ -50,7 +50,7 @@ steps:
 - name: clone
   image: docker:git
   commands:
-  - git clone $DRONE_GIT_HTTP_URL
+  - git clone https://github.com/dungtri/syncthing.git
   - git checkout v1.2.1
 
 - name: build
@@ -88,7 +88,7 @@ steps:
 - name: clone
   image: docker:git
   commands:
-  - git clone $DRONE_GIT_HTTP_URL
+  - git clone https://github.com/dungtri/syncthing.git
   - git checkout v1.2.1
 
 - name: build
@@ -122,7 +122,7 @@ steps:
 - name: clone
   image: docker:git
   commands:
-  - git clone $DRONE_GIT_HTTP_URL
+  - git clone https://github.com/dungtri/syncthing.git
   - git checkout v1.2.1
 
 - name: manifest
