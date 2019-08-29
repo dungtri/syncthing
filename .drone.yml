@@ -13,7 +13,7 @@ steps:
   image: docker:git
   commands:
   - git clone $DRONE_GIT_HTTP_URL
-  - git checkout $DRONE_REPO_BRANCH
+  - git checkout v1.2.1
 
 - name: build
   image: plugins/docker
@@ -51,7 +51,7 @@ steps:
   image: docker:git
   commands:
   - git clone $DRONE_GIT_HTTP_URL
-  - git checkout $DRONE_REPO_BRANCH
+  - git checkout v1.2.1
 
 - name: build
   image: plugins/docker
@@ -89,7 +89,7 @@ steps:
   image: docker:git
   commands:
   - git clone $DRONE_GIT_HTTP_URL
-  - git checkout $DRONE_REPO_BRANCH
+  - git checkout v1.2.1
 
 - name: build
   image: plugins/docker
@@ -123,7 +123,7 @@ steps:
   image: docker:git
   commands:
   - git clone $DRONE_GIT_HTTP_URL
-  - git checkout $DRONE_REPO_BRANCH
+  - git checkout v1.2.1
 
 - name: manifest
   image: plugins/manifest
