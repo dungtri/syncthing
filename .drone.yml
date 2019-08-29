@@ -13,6 +13,7 @@ steps:
   image: docker:git
   commands:
   - git clone https://github.com/dungtri/syncthing.git
+  - cd syncthing
   - git checkout v1.2.1
 
 - name: build
@@ -51,6 +52,7 @@ steps:
   image: docker:git
   commands:
   - git clone https://github.com/dungtri/syncthing.git
+  - cd syncthing
   - git checkout v1.2.1
 
 - name: build
@@ -89,6 +91,7 @@ steps:
   image: docker:git
   commands:
   - git clone https://github.com/dungtri/syncthing.git
+  - cd syncthing
   - git checkout v1.2.1
 
 - name: build
@@ -123,6 +126,7 @@ steps:
   image: docker:git
   commands:
   - git clone https://github.com/dungtri/syncthing.git
+  - cd syncthing
   - git checkout v1.2.1
 
 - name: manifest
