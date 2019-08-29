@@ -5,7 +5,16 @@ platform:
   os: linux
   arch: arm
 
+clone:
+  disable: true
+
 steps:
+- name: clone
+  image: docker:git
+  commands:
+  - git clone $DRONE_GIT_HTTP_URL
+  - git checkout $DRONE_BRANCH
+
 - name: build
   image: plugins/docker
   settings:
@@ -34,7 +43,16 @@ platform:
   os: linux
   arch: arm64
 
+clone:
+  disable: true
+
 steps:
+- name: clone
+  image: docker:git
+  commands:
+  - git clone $DRONE_GIT_HTTP_URL
+  - git checkout $DRONE_BRANCH
+
 - name: build
   image: plugins/docker
   settings:
@@ -63,7 +81,16 @@ platform:
   os: linux
   arch: amd64
 
+clone:
+  disable: true
+
 steps:
+- name: clone
+  image: docker:git
+  commands:
+  - git clone $DRONE_GIT_HTTP_URL
+  - git checkout $DRONE_BRANCH
+
 - name: build
   image: plugins/docker
   settings:
@@ -88,7 +115,16 @@ steps:
 kind: pipeline
 name: manifest
 
+clone:
+  disable: true
+
 steps:
+- name: clone
+  image: docker:git
+  commands:
+  - git clone $DRONE_GIT_HTTP_URL
+  - git checkout $DRONE_BRANCH
+
 - name: manifest
   image: plugins/manifest
   settings:
